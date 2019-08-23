@@ -14,13 +14,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private static int REQUEST_CODE = 100;
     Button btnMoveForResult;
     TextView tvResult;
-    public static String EXTRA_SELECTED_VALUE = "extra_selected_value";
-    public static int RESULT_CODE = 110;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
         btnMoveForResult = findViewById(R.id.btn_move_for_result);
         btnMoveForResult.setOnClickListener(this);
